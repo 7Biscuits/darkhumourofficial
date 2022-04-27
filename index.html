@@ -14,7 +14,6 @@
         min-height: 100%;
         }
 
-        /* Add some content at the bottom of the video/page */
         .content {
         position: fixed;
         bottom: 0;
@@ -24,7 +23,6 @@
         padding: 20px;
         }
 
-        /* Style the button used to pause/play the video */
         #myBtn {
         width: 200px;
         font-size: 18px;
@@ -51,13 +49,11 @@
         <button id="myBtn" onclick="myFunction()">Pause</button>
       </div>
       <script>
-        // Get the video
-        var video = document.getElementById("myVideo");
+          
+        const video = document.getElementById("myVideo");
         
-        // Get the button
-        var btn = document.getElementById("myBtn");
+        const btn = document.getElementById("myBtn");
         
-        // Pause and play the video, and change the button text
         function myFunction() {
           if (video.paused) {
             video.play();
